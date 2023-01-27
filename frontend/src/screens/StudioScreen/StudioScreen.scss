@@ -1,0 +1,147 @@
+@import "../../styles/var";
+$theme-color-p: #282828;
+$theme-color-s: #ff4e44;
+$font-color: #aaaaaa;
+
+.studio__wrapper {
+  background-color: $theme-color-p;
+  height: calc(100vh - 55px);
+  display: flex;
+  overflow: hidden;
+}
+
+.st__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 230px;
+  border-right: 2px solid $border-color;
+  padding-top: 30px;
+  .st__left__top {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h4 {
+      margin-top: 25px;
+    }
+    p {
+      margin-top: 5px;
+      color: lightgray;
+    }
+  }
+  .st__navTabs {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+    padding-left: 20px;
+    color: $font-color;
+    position: relative;
+    .st__icon {
+      margin-right: 20px;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 600;
+    }
+    span {
+      position: absolute;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      background-color: $theme-color-s;
+    }
+
+    &:hover {
+      background-color: #1f1f1f;
+    }
+  }
+  .st__navTabs__active {
+    background-color: #1f1f1f;
+    color: $theme-color-s;
+  }
+}
+
+.st__right {
+  color: white;
+  width: calc(100vw - 230px);
+  .studio__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+
+    button {
+      background-color: transparent;
+      border: 1px solid lightgray;
+      // padding: 5px 15px;
+      color: white;
+      font-size: 13px !important;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      justify-content: center;
+      .videoAdd__icon {
+        font-size: 23px;
+        color: $theme-color-s;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.modal__container {
+
+  .modal__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 2px solid $border-color;
+  }
+
+  .modal__body {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // margin: 50px 10px;
+    text-align: center;
+    flex-direction: column;
+    .upload__icon__div {
+      background-color: #313131;
+      height: 8rem;
+      width: 8rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // margin-bottom: 25px;
+      cursor: pointer;
+      .upload__icon {
+        color: #909090;
+        font-size: 4rem;
+      }
+    }
+    span {
+      color: grey;
+      font-weight: 300;
+    }
+    button {
+      margin-top: 25px;
+      background-color: #3ea6ff;
+      color: black;
+      &:hover {
+        background-color: #3ea6ff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: "700px") {
+  .modal__container {
+    width: 85vw !important;
+  }
+}

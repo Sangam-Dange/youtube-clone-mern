@@ -1,0 +1,77 @@
+.MuiTableContainer-root::-webkit-scrollbar {
+  display: none;
+}
+
+.MuiTableSortLabel-root {
+  &:hover {
+    color: #a7a497 !important;
+  }
+  &.Mui-active {
+    color: white !important;
+  }
+}
+.MuiTableSortLabel-iconDirectionDesc,
+.MuiTableSortLabel-iconDirectionAsc {
+  color: white !important;
+}
+
+.MuiTableRow-root {
+  background-color: #282828;
+  color: white !important;
+}
+.MuiTableRow-hover:hover {
+  background-color: #1f1f1f !important;
+}
+
+.video__div {
+  display: flex;
+  max-width: 350px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 7px 5px;
+  z-index: 30;
+  .video__thumbnail {
+    position: relative;
+    height: 70px;
+    min-width: 150px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    p {
+      font-size: 12px;
+      color: white;
+      background-color: black;
+      position: absolute;
+      bottom: 3px;
+      right: 3px;
+      padding: 5px;
+    }
+  }
+  .video__desc {
+    width: 200px;
+    margin-left: 10px;
+    p {
+      font-size: 13px;
+      color: grey;
+    }
+    .row__tab__icons {
+      cursor: pointer;
+    }
+    .row__tab__icons:hover {
+      color: white !important;
+    }
+  }
+}
+
+.visibility {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 100;
+  cursor: pointer;
+  .vis__icon {
+    margin-right: 10px;
+  }
+}

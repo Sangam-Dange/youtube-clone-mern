@@ -1,0 +1,44 @@
+@import "./styles/_var.scss";
+
+body {
+  background-color: $theme-color-bg-body;
+  color: white;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+::-webkit-scrollbar {
+  width: 8px;
+
+}
+/* Track */
+::-webkit-scrollbar-track {
+  // box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 10px;
+  height: 10%;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}
+
+@media screen and (max-width: 600px) {
+  .inner__container {
+    padding-bottom: 100px;
+    grid-template-columns: auto;
+    gap: 5px;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}

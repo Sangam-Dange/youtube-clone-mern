@@ -1,0 +1,38 @@
+@import "../../styles/_var.scss";
+
+.sub__wrapper {
+  padding-left: 15px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 50px;
+  background-color: $theme-color-bg-header;
+  z-index: 100;
+  border-bottom: 1.5px solid $border-color;
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  div {
+    background-color: #313131;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 80px;
+    padding: 0px 15px;
+    border: 1.5px solid #4d4d4d;
+    height: 35px;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+
+  .toggleSelect {
+    color: black;
+    background-color: white;
+    border: none;
+  }
+}
+
+.sub__wrapper::-webkit-scrollbar {
+  display: none;
+}

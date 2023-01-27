@@ -1,0 +1,13 @@
+.sideHeaders {
+  display: flex;
+  flex-direction: row;
+}
+.sideContainer {
+  width: calc(100vw - 80px);
+}
+.sideContainer-width-toggler {
+  width: calc(100vw - 200px);
+}
+.routing__hDiv {
+  display: flex;
+}
